@@ -31,7 +31,7 @@ if "results" not in st.session_state:
 # ============================================
 def show_main_screen():
 
-    st.title("Arudha & Upapada Calculator")
+    st.title("☀️ Arudha & Upapada Calculator")
 
     left, right = st.columns([1, 1])
 
@@ -215,3 +215,4 @@ elif st.session_state.page == "main_results":
 
 elif st.session_state.page == "interpret":
     show_interpretation_screen()
+
