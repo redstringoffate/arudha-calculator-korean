@@ -4,14 +4,8 @@ import io
 import re
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment
-import sys
-import os
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CALC_PATH = os.path.join(BASE_DIR, "calculations")
-sys.path.append(CALC_PATH)
-
-from arudha_calc import calc_all_arudhas
+from calculations.arudha_calc import calc_all_arudhas
 from calculations.ul_calc import calc_UL
 from data.houses import generate_house_lords, generate_house_signs
 
@@ -221,5 +215,6 @@ elif st.session_state.page == "main_results":
 
 elif st.session_state.page == "interpret":
     show_interpretation_screen()
+
 
 
