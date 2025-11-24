@@ -1,3 +1,9 @@
+import importlib
+import calc.arudha_calc
+
+importlib.reload(calc.arudha_calc)
+
+
 import streamlit as st
 import pandas as pd
 import io
@@ -215,6 +221,7 @@ elif st.session_state.page == "main_results":
 
 elif st.session_state.page == "interpret":
     show_interpretation_screen()
+
 
 
 
